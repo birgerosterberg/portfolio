@@ -1,6 +1,7 @@
 import React from "react";
 import Timer from "./components/Timer";
 import logo from "./images/logo1.png"
+import TimedText from "./components/TimedText";
 
 function App() {
   return (
@@ -21,17 +22,17 @@ function App() {
       <p className="font-bold">A Look and Feel, iamBiOS Experience.</p>
       <p className="font-bold">Copyright (C) 1984-2023, iamBiOS.</p>
       <div className="pl-3 xl:pl-8">
-        <p className="font-bold">Take a moment and relax your mind...</p>
-        <p className="font-bold">Take a deep breath... Breathe out...</p>
-        <p className="font-bold">Take a moment to feel this moment...</p>
-        <p className="font-bold">Error: could not load this page yet.</p>
+        <TimedText time={3000} text={<p className="font-bold">Take a moment and relax your mind...</p>} />
+        <TimedText time={6000} text={<p className="font-bold">Take a deep breath... Breathe out...</p>} />
+        <TimedText time={12000} text={<p className="font-bold">Take a moment to feel this moment...</p>} />
+        <TimedText time={16000} text={<p className="font-bold">Error: could not load this page yet.</p>} />
       </div>
 
       <div className="flex-wrap justify-center align-bottom absolute bottom-1 2xl:bottom-20">
         {/* Make sure that the key DEL will enter the page also. */}
         <p className="font-bold">Press DEL to <span className="text-2xl underline text-white 2xl:text-3xl hover:opacity-70">ENTER</span> the PAGE</p>
         {/* Add a line of todays time and date that was when you entered the page. */}
-        <p className="font-bold">Todays date and time</p>
+        <p className="font-bold">This page is soon ready.</p>
       </div>
 
     </div>

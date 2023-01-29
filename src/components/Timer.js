@@ -5,7 +5,7 @@ const Timer = () => {
     const [counter,setCounter] = useState(0);
 
   useEffect(() => {
-    let seconds = setTimeout(() => {
+     setTimeout(() => {
       setCounter(counter + 1);
     }, 1000);});
 
