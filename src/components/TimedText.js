@@ -9,7 +9,7 @@ const TimedText = ({ text, time }) => {
     }, time);
   }, [time]);
 
-  return showText ? <>{text}</> : <><span className="animate-[pulse_2s_ease-in-out_infinite] font-extrabold text-3xl">.</span><span className="animate-[pulse_4s_ease-in-out_infinite] font-extrabold text-3xl">.</span><span className="animate-[pulse_6s_ease-in-out_infinite] font-extrabold text-3xl">.</span><br></br></>;
+  return showText ? <>{text}</> : null;
 };
 
 export default TimedText;
